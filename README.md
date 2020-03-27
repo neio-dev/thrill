@@ -1,9 +1,11 @@
 # Thrill : Adam's escape
-![Image of presentation for the game](./readme-pres.gif "Presentation")
+
+![Image of presentation for the game](./readme-pres.gif 'Presentation')
 
 [Online version](https://thrill.danly.co)
 
-# 
+#
+
 Turn based game.
 2P only.
 
@@ -18,12 +20,36 @@ Both player are chaser. Choose the right weapon in the map and reach your oppone
 
 ## Getting Started
 
-A JSDOC is available.
+[A JSDoc is available](https://danlybc.github.io/thrill/GameFolder-docs/)
+
+## Install
+
+Use the package manager [npm](https://www.npmjs.com/get-npm) to install dependencies.
+
+Inside **thrill** folder, do the following
+
+```bash
+npm install
+```
+
+to get dependencies.
+
+then do
+
+```bash
+npm run build
+```
+
+to generate polyfill scripts.
+
+## Running it locally
+
+**After installing dependencies**, inside **thrill** folder, launch index.html in your favorite browser
 
 ## Built With
 
-* [Jquery](https://api.jquery.com) - The library used
+- [Jquery](https://api.jquery.com) - The library used
 
 ## Authors
 
-* **Danly** - *Initial work* - [danlyco](https://github.com/danlyco)
+- **Danly** - _Initial work_ - [danlyco](https://github.com/danlyco)
