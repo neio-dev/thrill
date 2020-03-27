@@ -1,0 +1,44 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "GameFolder",
+  "main": "modules/display.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danlyco/GameFolder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danlyco/GameFolder/issues"
+  },
+  "homepage": "https://github.com/danlyco/GameFolder#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "jsdoc-to-markdown": "^5.0.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "@babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "docdash": "^1.1.1"
+  }
+}
