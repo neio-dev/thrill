@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>display.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="module-Display-DisplayManager.html">DisplayManager</a><ul class='methods'><li data-type='method'><a href="module-Display-DisplayManager.html#.refresh">refresh</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#characterSelection">characterSelection</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#characterSelector">characterSelector</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#gameModeSelection">gameModeSelection</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#init">init</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#interface">interface</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#intro">intro</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#remove">remove</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#slideHide">slideHide</a></li><li data-type='method'><a href="module-Display-DisplayManager.html#slideShow">slideShow</a></li></ul></li><li><a href="module-Game-BarbedWire.html">BarbedWire</a></li><li><a href="module-Game-Barrel.html">Barrel</a></li><li><a href="module-Game-Board.html">Board</a><ul class='methods'><li data-type='method'><a href="module-Game-Board.html#getTile">getTile</a></li><li data-type='method'><a href="module-Game-Board.html#isPlayerNear">isPlayerNear</a></li></ul></li><li><a href="module-Game-Character.html">Character</a><ul class='methods'><li data-type='method'><a href="module-Game-Character.html#checkItem">checkItem</a></li><li data-type='method'><a href="module-Game-Character.html#equipItem">equipItem</a></li><li data-type='method'><a href="module-Game-Character.html#getPos">getPos</a></li><li data-type='method'><a href="module-Game-Character.html#getTile">getTile</a></li><li data-type='method'><a href="module-Game-Character.html#move">move</a></li><li data-type='method'><a href="module-Game-Character.html#setTile">setTile</a></li></ul></li><li><a href="module-Game-EmptyTile.html">EmptyTile</a></li><li><a href="module-Game-GameManager.html">GameManager</a><ul class='methods'><li data-type='method'><a href="module-Game-GameManager.html#checkPlayersProximity">checkPlayersProximity</a></li><li data-type='method'><a href="module-Game-GameManager.html#getCharModels">getCharModels</a></li><li data-type='method'><a href="module-Game-GameManager.html#getItemIndex">getItemIndex</a></li><li data-type='method'><a href="module-Game-GameManager.html#getPossibleMoves">getPossibleMoves</a></li><li data-type='method'><a href="module-Game-GameManager.html#itemSpawn">itemSpawn</a></li><li data-type='method'><a href="module-Game-GameManager.html#nextGameTurn">nextGameTurn</a></li><li data-type='method'><a href="module-Game-GameManager.html#nextTurn">nextTurn</a></li><li data-type='method'><a href="module-Game-GameManager.html#playerSpawn">playerSpawn</a></li><li data-type='method'><a href="module-Game-GameManager.html#removePossibleMoves">removePossibleMoves</a></li></ul></li><li><a href="module-Game-Item.html">Item</a></li><li><a href="module-Game-Movable.html">Movable</a></li><li><a href="module-Game-Observable.html">Observable</a><ul class='methods'><li data-type='method'><a href="module-Game-Observable.html#dispatch">dispatch</a></li><li data-type='method'><a href="module-Game-Observable.html#initProperties">initProperties</a></li><li data-type='method'><a href="module-Game-Observable.html#onChange">onChange</a></li></ul></li><li><a href="module-Game-Obstacle.html">Obstacle</a></li><li><a href="module-Game-Player.html">Player</a></li><li><a href="module-Game-Positionable.html">Positionable</a></li><li><a href="module-Game-SurvivalGameManager.html">SurvivalGameManager</a></li><li><a href="module-Game-Tile.html">Tile</a><ul class='methods'><li data-type='method'><a href="module-Game-Tile.html#getPos">getPos</a></li><li data-type='method'><a href="module-Game-Tile.html#hasPlayer">hasPlayer</a></li><li data-type='method'><a href="module-Game-Tile.html#isEmpty">isEmpty</a></li><li data-type='method'><a href="module-Game-Tile.html#isObstacle">isObstacle</a></li></ul></li><li><a href="module-Game-VersusGameManager.html">VersusGameManager</a><ul class='methods'><li data-type='method'><a href="module-Game-VersusGameManager.html#fight">fight</a></li><li data-type='method'><a href="module-Game-VersusGameManager.html#nextFightTurn">nextFightTurn</a></li><li data-type='method'><a href="module-Game-VersusGameManager.html#onFightState">onFightState</a></li></ul></li><li><a href="module-Game-Woodbox.html">Woodbox</a></li><li><a href="TestManager.html">TestManager</a></li></ul><h3>Modules</h3><ul><li><a href="module-Display.html">Display</a></li><li><a href="module-Game.html">Game</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">display.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable class-methods-use-this */
+/* eslint-disable import/no-cycle */
+/* eslint-disable import/extensions */
+/* eslint-disable no-unused-vars */
+
+/**
+ * @module Display
+ */
+
+
+import Game from './game.js';
+import Event from './event.js';
+import Test from './test.js';
+
+class DisplayManager {
+  /**
+   * Call different display states
+   * @class DisplayManager
+   */
+  constructor() {
+    this.state = 'intro';
+    // eslint-disable-next-line no-restricted-syntax
+    for (const player of Game.players) {
+      player.char.onChange(() => DisplayManager.refresh());
+    }
+    Game.onChange(() => DisplayManager.refresh());
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  /** Used to show intro screen */
+  intro() {
+    const $intro = $('.intro').css({
+      background: 'url("./assets/img/intro.gif") no-repeat',
+      'background-size': '100%',
+    });
+    $('&lt;button>&lt;/button>').text('Nouvelle partie').addClass('intro--newgame')
+      .appendTo($intro);
+    $('&lt;img>').addClass('intro--leaves')
+      .attr('src', './assets/img/intro-leaves.png').appendTo($intro);
+    $('&lt;img>').addClass('intro--title')
+      .attr('src', './assets/img/intro-title.png').appendTo($intro);
+  }
+
+  /** Used to show game mode selection screen */
+  gameModeSelection() {
+    const $intro = $('.intro');
+    $('.intro--leaves').css('animation-play-state', 'running');
+    $('&lt;h1>&lt;/h1>').text('Select game mode').addClass('intro--gameMode__tip').appendTo($intro);
+    const $gameMode = $('&lt;div>&lt;/div>').addClass('intro--gameMode').prependTo($intro);
+    $('&lt;div>&lt;/div>').addClass('intro--gameMode__box').css('background', 'url("./assets/img/intro--survival.png") 0 0 no-repeat').appendTo($gameMode);
+    $('&lt;div>&lt;/div>').addClass('intro--gameMode__box').css('background', 'url("./assets/img/intro--versus.png") 0 0 no-repeat').appendTo($gameMode);
+    const $gameModeBoxes = $('.intro--gameMode__box, .intro--gameMode__tip');
+    this.slideShow($gameModeBoxes, 1000);
+  }
+
+  /** Used to show character selection screen */
+  characterSelection(mode) {
+    // Removing previous screen
+    const $previousScreen = $('.intro--gameMode__box, .intro--gameMode__tip');
+    this.slideHide($previousScreen);
+
+    const $intro = $('.intro');
+    const $charSelTip = $('&lt;h1>&lt;/h1>').text('Select character').addClass('intro--characterSelection__tip').appendTo($intro);
+    this.slideShow($charSelTip, 1000);
+    const $charSel = $('&lt;div>&lt;/div>').addClass('intro--characterSelection').appendTo($intro);
+    [1, 2].forEach(
+      (elem) => {
+        const $charSelPlayer = $('&lt;div>&lt;/div>').addClass('intro--characterSelection__player').appendTo($charSel);
+        $('&lt;h1>&lt;/h1>').text(`P${elem}`).appendTo($charSelPlayer);
+        const $charSelChars = $('&lt;div>&lt;/div>').addClass('intro--characterSelection__chars').appendTo($charSelPlayer);
+        const possibleChar = Game.getCharModels(mode);
+        for (const char of possibleChar) {
+          $('&lt;div>&lt;/div>').addClass('intro--characterSelection__char').css('background-image',
+            `url('./assets/chars/${char.toLowerCase()}.png')`).appendTo($charSelChars);
+        }
+        const $charSelector = $('&lt;div>&lt;/div>').addClass('intro--characterSelection__charPreview').appendTo($charSelPlayer);
+        if (elem === 2) {$charSelector.css({
+          transform: 'scaleX(-1)',
+          left: '40%',
+        });
+        }
+      },
+    );
+  }
+
+  /** Used to get visual feedback when selecting character */
+  characterSelector(char, clickedElement) {
+    $(`.intro--characterSelection__player:eq(${char}) > .intro--characterSelection__chars > .intro--characterSelection__char`).addClass('out');
+    $(`.intro--characterSelection__player:eq(${char}) > .intro--characterSelection__chars > .intro--characterSelection__char`).removeClass('selected');
+    clickedElement.target.classList.remove('out');
+    clickedElement.target.classList.add('selected');
+    const $background = $(`.intro--characterSelection__player:eq(${char}) > .intro--characterSelection__chars > .selected`).css('background-image');
+    const cleanup = '/"|\'|)/g';
+    const $char = $background.split('/').pop().replace("cleanup", '').split('.png')[0];
+    $(`.intro--characterSelection__player:eq(${char}) > .intro--characterSelection__charPreview`).css('background-image', 'none');
+    $(`.intro--characterSelection__player:eq(${char}) > .intro--characterSelection__charPreview`).css('background-image', $background);
+    if (Game.playerModel.length >= 1) {
+      const $intro = $('.intro');
+      $('.intro--characterSelection__startButton').remove();
+      $('&lt;button>').text('START').addClass('intro--characterSelection__startButton').appendTo($intro);
+    }
+    return $char;
+  }
+
+  /**
+   * Show an element with slide down animation
+   * @param {ObJect} elem
+   * @param {Int} timer Niliseconds value before the animation starts
+   */
+  slideShow(elem, timer) {
+    setTimeout(() => {
+      elem.css({
+        animation: 'slidedown-show 1s forwards',
+        'animation-play-state': 'running',
+      });
+    }, timer);
+  }
+
+  /**
+   * Hide an element with slide up animation
+   * @param {ObJect} elem
+   */
+  slideHide(elem) {
+    elem.css({
+      animation: 'slideup-hide 1s forwards',
+      'animation-play-state': 'running',
+    });
+  }
+
+  // winning() {}
+
+  /**
+   * Init the board with all games value
+   */
+  init() {
+    const $intro = $('.intro');
+    this.slideHide($intro, 1000);
+    setTimeout(() => {
+      $intro.remove();
+    }, 105);
+    $('table').css('animation-play-state', 'running');
+    const $gameBoard = $('tbody');
+
+    // Calculating number of rows and line
+    // Ex: if board contains 49 tiles, get square root of 49 = 7.
+    const numberRowCol = Math.floor(Math.sqrt(Game.board.tiles.length));
+
+    for (let y = 0; y &lt; numberRowCol; ++y) {
+      const $row = $('&lt;tr>&lt;/tr>').css({
+        transform: `translateY(${19 * y}px)`,
+      }).addClass(`row-${y}`).appendTo($gameBoard);
+      for (let x = 0; x &lt; numberRowCol; ++x) {
+        const tileNumber = x + numberRowCol * y;
+        const $col = $('&lt;td>&lt;/td>').css({
+          transform: `translateX(${19 * x}px)`,
+        }).addClass(`col-${x}`).appendTo($row);
+        const $tile = $('&lt;div>&lt;/div>').addClass('block').addClass(`tile-${tileNumber}`).appendTo($col);
+        const $block = $('&lt;div>&lt;/div>').addClass(`block--${Game.board.tiles[tileNumber]._type.toLowerCase()}`).appendTo($tile);
+        if (Game.board.tiles[tileNumber].isEmpty()) {
+          if (Game.board.tiles[tileNumber]._hasItem[0] === 1) {
+            if (Game.board.tiles[tileNumber].hasPlayer === 0) {
+              const $item = $('&lt;div>&lt;/div>').addClass('item').css('background', `url(../assets/items/${Game.items[Game.board.tiles[tileNumber]._hasItem[1]].name.toLowerCase()}.png) 0px 0px no-repeat`).appendTo($block);
+              $('&lt;div>&lt;/div>').addClass('tooltiptext').html(`&lt;h1>${Game.items[Game.board.tiles[tileNumber]._hasItem[1]].name}&lt;/h1>&lt;br />&lt;p>${Game.items[Game.board.tiles[tileNumber]._hasItem[1]].desc}&lt;/p>&lt;br />${Game.items[Game.board.tiles[tileNumber]._hasItem[1]].descChar}`).appendTo($item);
+            }
+          } else {
+            // $block.find('.item').css('opacity', '0');
+          }
+        }
+
+        Game.getPossibleMoves();
+
+        if (Game.board.tiles[tileNumber].isObstacle()) {
+          $block.addClass(`block--obstacle__${Game.board.tiles[tileNumber]._model.toLowerCase()}`);
+        }
+        if (Game.board.tiles[tileNumber].reachable === 1) {
+          $(`.tile-${tileNumber}`).addClass('block--possibleMove');
+        } else {
+          $(`.tile-${tileNumber}`).removeClass('block--possibleMove');
+        }
+      }
+    }
+
+    $(`.tile-${Game.players[0].char.getTile()}`).find('div:eq(0)').removeAttr('class').addClass('block--player')
+      .addClass(`block--player__${Game.players[0].char.name.toLowerCase()}`);
+    $(`.tile-${Game.players[1].char.getTile()}`).find('div:eq(0)').removeAttr('class').addClass('block--player')
+      .addClass(`block--player__${Game.players[1].char.name.toLowerCase()}`);
+
+    Display.interface();
+  }
+
+  static showDamages() {
+    // let $;
+  }
+
+  /** Remove actual board visual elements */
+  remove() {
+    const $gameBoard = $('tbody tr');
+    $gameBoard.remove();
+  }
+
+  /** Construct interface based on GameMode */
+  interface() {
+    // Basic interface writing
+    const $wrapper = $('.interface');
+    $wrapper.empty();
+    $('&lt;div>&lt;/div>').addClass('interface--element interface--fight__blason').prependTo($wrapper);
+    $('&lt;div>&lt;/div>').addClass('interface--element interface--button__music').prependTo($wrapper);
+    const $totalTurnBar = $('&lt;div>&lt;/div>').addClass('interface--element interface--bar__totalturn').prependTo($wrapper);
+    $('&lt;p>&lt;/p>').addClass('totalTurn').appendTo($totalTurnBar);
+    $('&lt;div>&lt;/div>').addClass('interface--bar__totalturn__fill').appendTo($totalTurnBar);
+    $('&lt;div>&lt;/div>').addClass('interface--button__action1').attr('id', 'action1').prependTo($wrapper);
+    $('&lt;div>&lt;/div>').addClass('interface--button__action2').attr('id', 'action2').prependTo($wrapper);
+    Game.players.forEach(
+      (player) => {
+        const $interfacePlayer = $('&lt;div>&lt;/div>').addClass(`interface--player interface--player__${player.number}`).appendTo($wrapper);
+        $('&lt;div>&lt;/div>').addClass(`interface--element interface--player__${player.number}__char`).appendTo($interfacePlayer);
+        $('&lt;div>&lt;/div>').addClass(`interface--element interface--equipedItem interface--player__${player.number}__equipedItem`).appendTo($interfacePlayer);
+        const $healthbar = $('&lt;div>&lt;/div>').addClass('interface--element interface--healthbar').appendTo($interfacePlayer);
+        $('&lt;div>&lt;/div>').addClass('interface--healthbar__overlay').appendTo($healthbar);
+        if (player.number === 2) $healthbar.css('transform', 'scaleX(-1)');
+      },
+    );
+
+    if (Game.mode === 'versus') {
+      const activeFight = Game.players[0].char.onFight;
+      switch (activeFight) {
+      // in fight loop
+        case 1:
+          $('.interface--button__action1').css('background', 'url(./assets/img/button-attack.png) no-repeat').css('left', '49%');
+          $('.interface--button__action2').css('background', 'url(./assets/img/button-block.png) no-repeat');
+          $('.interface--fight-blason:eq(0)').css('visibility', 'visible');
+          Game.board.tiles.forEach((tile) => {
+            if (!tile._hasPlayer) {
+              $(`.tile-${tile.getPos()[0] + tile.getPos()[1] * Math.floor(Math.sqrt(Game.board.tiles.length))}:eq(0)`).css('filter', 'grayscale(100)');
+            }
+          });
+          break;
+
+        // out of fight
+        case 0:
+          $('#action1').css('background', 'url(./assets/img/button-equip.png) no-repeat');
+          $('#action2').css('background', 'url(./assets/img/button-turn.png) no-repeat');
+          break;
+
+        default:
+          break;
+      }
+    } else {
+      $('.interface--bar__totalturn').css('visibility', 'visible');
+      $('.totalTurn').text(`Tour : ${Game.totalTurn}/${Game.escapeTurn}`);
+      $('.interface--bar__totalturn__fill').width(`${(Game.totalTurn / Game.escapeTurn) * 100}%`);
+    }
+
+    /**
+     * Show the player which one is active
+     */
+    switch (Game.activePlayer) {
+      case 0:
+        $('.interface--player__1').removeClass('interface--inactive');
+        $('.interface--player__2').addClass('interface--inactive');
+        break;
+
+      case 1:
+        $('.interface--player__2').removeClass('interface--inactive');
+        $('.interface--player__1').addClass('interface--inactive');
+        break;
+
+      default:
+        break;
+    }
+
+    for (let i = 0; i &lt; Game.players.length; ++i) {
+      if (Game.players[i].desiredChar === 0) {
+        $(`.interface--player__${i + 1}__char:eq(0)`).addClass('interface--player__char__survivor');
+      } else {
+        $(`.interface--player__${i + 1}__char:eq(0)`).addClass('interface--player__char__chaser');
+      }
+      $(`.interface--player__${i + 1}__char:eq(0)`).addClass(`block--player__${Game.players[i].char.name.toLowerCase()}`);
+      $(`.interface--player__${i + 1}__equipedItem:eq(0)`).css('background', `url(../assets/items/${Game.players[i].char.equipedItem.name.toLowerCase()}.png) center center no-repeat, black`);
+      $(`.interface--player__${i + 1} .interface--healthbar__overlay`).css({
+        width: `${Game.players[i].char._health}%`,
+      }).text(`${Game.players[i].char._health}/100`);
+    }
+  }
+
+  /** Refresh visual elements of board */
+  static refresh() {
+    Display.remove();
+    Display.init();
+  }
+}
+
+const Display = new DisplayManager();
+Display.intro();
+
+
+export { Display as default };
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Thu Dec 12 2019 13:25:24 GMT+0100 (GMT+01:00) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>
